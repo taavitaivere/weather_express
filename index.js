@@ -24,9 +24,11 @@ app.get('/', function (req, res) {
                 city: city,
                 temp: temp
             })
-
         })
-
+})
+app.post ('/', function (req,res) {
+    console.log('req.body')
+    res.redirect('/')
 })
 app.listen(3000, ()=> {
     console.log('Server started on http://localhost:3000');
